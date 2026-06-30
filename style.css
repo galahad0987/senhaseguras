@@ -91,33 +91,63 @@ body{
 }
    
 .parametro-senha__botao{
-background-color: var(--cor-de-fundo);
-color:var(--branco);
-border: 2px solid var(--branco);
-padding: 24px;
-font-size: 24px;
-cursor: pointer;
+   background-color:var(--cor-de-fundo);
+   color:var(--branco);
+   border: 2px solid var(--branco);
+   padding: 24px;
+   font-size: 24px;
 }
 .parametro-senha__texto{
-border-top: 2px solid var(--branco);
-border-bottom: 2px solid var(--branco);
-padding: 24px;
-margin: 0px;
+    border: 2px solid var(--branco);
+    border-bottom: 2px solid var(--branco); 
+    padding: 24px;
+    margin: 0px;
+    cursor: pointer; 
 }
 
 
 label {
     font-size: 20px;
-
 }
 
-.checkbox{
+.checkbox {
     width: 20px;
     height: 20px;
-    cursor: pointer;
+    cursor: pointer
 }
 
-
+.barra{
+    background-color: var(--fundo-senha);
+    height: 30px;
+    width: 100%;
+    border: 1px solid var(--borda);
+}
+.forca{
+    height: 30px;
+    position: relative;
+    bottom: 30px;
+}
+.fraca{
+   
+    width: 25%;
+    background-color: #E71B32;
+   
+}
+.media{
+    background-color: #FAF408;
+    width: 50%;
+    height: 30px;
+    position: relative;
+    bottom: 30px;
+}
+.forte{
+    background-color: #00FF85;
+    width: 100%;
+}
+.parametro-senha-textos{
+    display: flex;
+    justify-content: space-between;
+}
 @media screen and (min-width: 768px) {
     .parametro-coluna__senha{
         flex-direction: row;
